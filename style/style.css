@@ -1,0 +1,106 @@
+/* Generales */
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    margin:0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+}
+/* Principal */
+
+.principal{
+    max-width: 768px;
+    min-width: 320;
+    display:flex;
+    justify-content: center;
+    justify-items: center;
+}  
+
+/* Columnas */
+
+.column{
+    padding: 2rem;
+}
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 1rem 0rem 0rem 1rem;
+}
+.suvs{
+   background-color: hsl(184, 100%, 22%); 
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0rem 1rem 1rem 0px;
+}
+.title{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+    color: hsl(0, 0%, 95%);
+
+}
+.text{
+    margin-top: 20px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 2em;
+    font-size: 14px;
+    margin-bottom: 7rem;
+}
+.link{
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    margin-top: 100px;
+}
+
+.link:hover{
+    background-color: transparent;
+    border: hsla(0, 0%, 100%, 0.75) 1px solid;
+    border-radius: 20px;
+}
+.sedans .link{
+   color: hsl(31, 77%, 52%);
+}
+.suvs .link{
+    color: hsl(184, 100%, 22%);
+}
+.luxury .link{
+    color: hsl(179, 100%, 13%);
+}
+.sedans .link:hover{
+    color: hsla(0, 0%, 100%, 0.75);
+ }
+ .suvs .link:hover{
+    color: hsla(0, 0%, 100%, 0.75);
+ }.luxury .link:hover{
+    color: hsla(0, 0%, 100%, 0.75);
+ }
+
+ @media (max-width:320px){
+    .principal{
+        display:block;
+    } 
+    .column{
+        padding: 3rem;
+    }
+    .text{
+        margin-bottom: 4rem;
+    }
+    .sedans{
+        border-radius: 1rem 1rem 0rem 0rem;
+    }
+    .luxury{
+        border-radius: 0rem 0rem 1rem 1rem;
+    }
+ }
